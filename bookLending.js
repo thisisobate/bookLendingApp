@@ -167,11 +167,11 @@ const books = [
         "-------------------------------------"
         );
   
-  // borrowBook(4);
-  // borrowBook(1);
-  // returnBook(1);
-  // borrowBook(2);
-  // borrowBook(3);
-  // borrowBook(3);
+  borrowBook(4);
+  borrowBook(1);
+  returnBook(1);
+  borrowBook(2);
+  borrowBook(3);
+  borrowBook(3);
 
-  module.exports = { getBook: getBook, showBooksAvailable: showBooksAvailable };
+  module.exports = { getBook: getBook, showBooksAvailable: showBooksAvailable, removeFromborrowersList: removeFromborrowersList };

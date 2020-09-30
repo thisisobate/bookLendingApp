@@ -1,4 +1,4 @@
-const {getBook, showBooksAvailable} = require('./bookLending');
+const {getBook, showBooksAvailable, removeFromborrowersList} = require('./bookLending');
 
 // is function defined?
 test('getBook function exists', () => {
@@ -20,4 +20,10 @@ test('showBooksAvailable works', () => {
     "ayodele",
     "jengartins",
     "return of karishika"]);
+});
+//tonotContain in array
+test('remove book from borrowed list', () => {
+    const borrowedList = ['jegga', 'ketu', 'ada gaga', 'korado'];
+    borrowedList.shift('jegga')
+    expect(borrowedList.includes('jegga')).toBe(false);
 });
