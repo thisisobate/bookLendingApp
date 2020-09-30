@@ -19,5 +19,8 @@
   "homepage": "https://github.com/thisisobate/bookLendingApp#readme",
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
   }
 }
