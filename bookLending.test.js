@@ -1,13 +1,13 @@
 const getBook = require('./bookLending');
-// const showBooksAvailable = require('./bookLending');
+const showBooksAvailable = require('./bookLending');
 
 // is function defined?
 test('getBook function exists', () => {
     expect(getBook).toBeDefined();
 });
-// test('showBooksAvailable function exists', () => {
-//     expect(showBooksAvailable).toBeDefined();
-// });
+test('showBooksAvailable function exists', () => {
+    expect(showBooksAvailable).toBeDefined();
+});
 
 // does function work?
 test('getBook works', () => {
@@ -15,13 +15,13 @@ test('getBook works', () => {
     );
 });
 
-// test('showBooksAvailable works', () => {
-//     expect(showBooksAvailable()).toEqual([
-//         "Panel of kings",
-//         "innovation cyclic",
-//         "haealth and money",
-//         "ayodele",
-//         "jengartins",
-//         "return of karishika"
-//     ]);
-// });
+test('showBooksAvailable works', () => {
+    expect(showBooksAvailable()).toEqual([
+        "Panel of kings",
+        "innovation cyclic",
+        "haealth and money",
+        "ayodele",
+        "jengartins",
+        "return of karishika"
+    ]);
+});
